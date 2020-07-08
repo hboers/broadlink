@@ -1,5 +1,5 @@
 {
-    "name": "thephpguys/broadlink",
+    "name": "hboers/broadlink",
     "description": "PHP7 Broadlink API library",
     "type": "library",
     "license": "MIT",
