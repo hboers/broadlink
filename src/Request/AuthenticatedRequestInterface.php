@@ -1,6 +1,6 @@
 <?php
 
-namespace TPG\Broadlink\Request;
+namespace HBO\Broadlink\Request;
 
 interface AuthenticatedRequestInterface
 {

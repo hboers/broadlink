@@ -1,9 +1,9 @@
 <?php
 
-namespace TPG\Broadlink\Cipher;
+namespace HBO\Broadlink\Cipher;
 
 
-use TPG\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\Packet;
 
 interface CipherInterface
 {

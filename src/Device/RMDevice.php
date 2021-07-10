@@ -1,11 +1,11 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
 
-use TPG\Broadlink\Request\CheckSensorsRequest;
-use TPG\Broadlink\Response\CheckSensorsResponse;
+use HBO\Broadlink\Request\CheckSensorsRequest;
+use HBO\Broadlink\Response\CheckSensorsResponse;
 
 class RMDevice extends AbstractDevice implements HasTemperatureSensorInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace TPG\Broadlink\Packet;
+namespace HBO\Broadlink\Packet;
 
-use TPG\Broadlink\Utils;
+use HBO\Broadlink\Utils;
 
 class Packet extends \SplFixedArray
 {

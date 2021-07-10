@@ -1,16 +1,16 @@
 <?php
 
-namespace TPG\Broadlink\Request;
+namespace HBO\Broadlink\Request;
 
 
-use TPG\Broadlink\Device\AbstractDevice;
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Device\DeviceResolverInterface;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Response\DiscoverResponse;
-use TPG\Broadlink\Session;
-use TPG\Broadlink\Utils;
+use HBO\Broadlink\Device\AbstractDevice;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Device\DeviceResolverInterface;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Response\DiscoverResponse;
+use HBO\Broadlink\Session;
+use HBO\Broadlink\Utils;
 
 class DiscoverRequest implements RequestInterface
 {

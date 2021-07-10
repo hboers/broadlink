@@ -1,8 +1,8 @@
 <?php
 
-namespace TPG\Broadlink\Response;
+namespace HBO\Broadlink\Response;
 
-use TPG\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Packet\PacketBuilder;
 
 class DiscoverResponse implements ResponseInterface
 {

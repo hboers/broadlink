@@ -1,6 +1,6 @@
 <?php
 
-namespace TPG\Broadlink\Cloud;
+namespace HBO\Broadlink\Cloud;
 
 
 class CatalogRemote

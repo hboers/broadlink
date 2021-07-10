@@ -1,13 +1,13 @@
 <?php
 
-namespace TPG\Broadlink\Request;
+namespace HBO\Broadlink\Request;
 
 
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Response\AuthenticationResponse;
-use TPG\Broadlink\Session;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Response\AuthenticationResponse;
+use HBO\Broadlink\Session;
 
 class AuthenticationRequest implements RequestInterface
 {

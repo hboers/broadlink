@@ -1,9 +1,9 @@
 <?php
 
-namespace TPG\Broadlink\Request;
+namespace HBO\Broadlink\Request;
 
 
-use TPG\Broadlink\Session;
+use HBO\Broadlink\Session;
 
 interface RequestInterface
 {

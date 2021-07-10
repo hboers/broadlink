@@ -1,13 +1,13 @@
 <?php
 
-namespace TPG\Broadlink;
+namespace HBO\Broadlink;
 
 
-use TPG\Broadlink\Cipher\CipherInterface;
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Request\RequestInterface;
+use HBO\Broadlink\Cipher\CipherInterface;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Request\RequestInterface;
 
 class Session
 {

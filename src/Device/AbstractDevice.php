@@ -1,14 +1,14 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
-use TPG\Broadlink\Cipher\Cipher;
-use TPG\Broadlink\Request\AuthenticatedRequestInterface;
-use TPG\Broadlink\Request\AuthenticationRequest;
-use TPG\Broadlink\Request\DiscoverRequest;
-use TPG\Broadlink\Response\AuthenticationResponse;
-use TPG\Broadlink\Session;
+use HBO\Broadlink\Cipher\Cipher;
+use HBO\Broadlink\Request\AuthenticatedRequestInterface;
+use HBO\Broadlink\Request\AuthenticationRequest;
+use HBO\Broadlink\Request\DiscoverRequest;
+use HBO\Broadlink\Response\AuthenticationResponse;
+use HBO\Broadlink\Session;
 
 abstract class AbstractDevice implements DeviceInterface
 {

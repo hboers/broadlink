@@ -1,6 +1,6 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
 final class BroadcastDevice implements DeviceInterface

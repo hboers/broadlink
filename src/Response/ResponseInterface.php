@@ -1,6 +1,6 @@
 <?php
 
-namespace TPG\Broadlink\Response;
+namespace HBO\Broadlink\Response;
 
 
 interface ResponseInterface

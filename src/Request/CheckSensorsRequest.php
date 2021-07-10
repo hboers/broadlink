@@ -1,12 +1,12 @@
 <?php
 
-namespace TPG\Broadlink\Request;
+namespace HBO\Broadlink\Request;
 
 
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Response\CheckSensorsResponse;
-use TPG\Broadlink\Session;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Response\CheckSensorsResponse;
+use HBO\Broadlink\Session;
 
 class CheckSensorsRequest implements RequestInterface,AuthenticatedRequestInterface
 {
