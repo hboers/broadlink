@@ -1,5 +1,5 @@
 {
-    "name": "thephpguys/broadlink",
+    "name": "hboers/broadlink",
     "description": "PHP7 Broadlink API library",
     "type": "library",
     "license": "MIT",
@@ -7,12 +7,16 @@
         {
             "name": "Vadim Zotov",
             "email": "vadim@thephpguys.com"
+        },
+        {
+            "name": "Heinrich Boers",
+            "email": "hboers@me.com"
         }
     ],
     "require": {},
     "autoload": {
       "psr-4": {
-        "TPG\\Broadlink\\": "src/"
+        "HBO\\Broadlink\\": "src/"
       }
     }
 }
