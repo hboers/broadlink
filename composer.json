@@ -7,12 +7,16 @@
         {
             "name": "Vadim Zotov",
             "email": "vadim@thephpguys.com"
+        },
+        {
+            "name": "Heinrich Boers",
+            "email": "hboers@me.com"
         }
     ],
     "require": {},
     "autoload": {
       "psr-4": {
-        "TPG\\Broadlink\\": "src/"
+        "HBO\\Broadlink\\": "src/"
       }
     }
 }
