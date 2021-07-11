@@ -45,19 +45,30 @@ class DiscoverCommand implements RawCommandInterface
         $packetBuilder->writeBytes(0x18,array_reverse(Utils::getIPAddressArray($this->getLocalIp())));
         return $packetBuilder->getPacket();
     }
+    
+    private function buildIP($deviceId) : string 
+    {
+        switch($deviceId) 
+            case 0x279d:
+                return implode('.',$packetBuilder->readBytes(0x36,4));
+            default:
+                return implode('.',array_reverse($packetBuilder->readBytes(0x36,4)));
+        }
+    }
 
     public function handleResponse(Packet $packet)
     {
         $packetBuilder = new PacketBuilder($packet);
         $deviceId = $packetBuilder->readInt16(0x34);
-        $ip = implode('.',array_reverse($packetBuilder->readBytes(0x36,4)));
+        $ip = $this->buildIP($deviceId);
         $mac = vsprintf('%02x:%02x:%02x:%02x:%02x:%02x',$packetBuilder->readBytes(0x3a,6));
         $name =  trim(implode(array_map('\chr',array_reverse($packetBuilder->readBytes(0x40,60)))));
         return new DiscoveredDevice(new Device($ip,$mac),$deviceId,$name);
 
     }
 
-    private function getLocalIp(){
+    private function getLocalIp() 
+    {
         $s = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
         socket_connect($s ,'8.8.8.8', 53);  // connecting to a UDP address doesn't send packets
         socket_getsockname($s, $localIp);
