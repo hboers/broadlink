@@ -28,8 +28,8 @@ class DiscoveredDevice implements DeviceInterface, \JsonSerializable
         $this->name = $name;
     }
 
-    public function getHexId():int {
-        return '0x'.dechex($this->deviceId);
+    public function getHexId():string {
+        return '0x' . dechex($this->getId());
     }
 
     public function getId():int {
@@ -39,6 +39,7 @@ class DiscoveredDevice implements DeviceInterface, \JsonSerializable
     public function getModel(){
         return self::getModelByDeviceId($this->deviceId);
     }
+    
     public function getName(){
         return $this->name;
     }
