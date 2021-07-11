@@ -127,6 +127,8 @@ class DiscoveredDevice implements DeviceInterface, \JsonSerializable
                 return 'RM2 Pro Plus BL';
             case 0x278f:
                 return 'RM Mini Shate';
+            case 0x279d:
+                return 'RM3 Pro';
             case 0x2714:
                 return 'A1';
             case 0x4EB5:
@@ -159,6 +161,7 @@ class DiscoveredDevice implements DeviceInterface, \JsonSerializable
             case 0x2787:
             case 0x278b:
             case 0x278f:
+            case 0x279d:
                 return RMDevice::class;
             default:
                 return AuthenticatedDevice::class;
