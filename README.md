@@ -1,15 +1,23 @@
 # Broadlink API PHP7 library 
 
-A PHP 7 library for controlling IR and Wireless 433Mhz controllers from [Broadlink](http://www.ibroadlink.com/rm/). 
-The protocol refer to [mjg59/python-broadlink](https://github.com/mjg59/python-broadlink/blob/master/README.md)
+A PHP 7 library for controlling IR and Wireless 433Mhz controllers 
+from [Broadlink](http://www.ibroadlink.com/rm/). 
 
-Currently supported only RM Devices
+Details about the protocoll can be found at 
+[mjg59/python-broadlink](https://github.com/mjg59/python-broadlink/blob/master/README.md)
 
-Discover all devices in network:
+Based on the original codes of [ThePHPGuys/broadlink](https://github.com/thephpguys/broadlink)
+and [rudestan/broadlink-api](https://github.com/rudestan/broadlink-api)
+
+### Discover devices in network
+
+
 ```php
 echo json_encode(\TPG\Broadlink\Broadlink::discover());
 ```
-Will produce:
+
+will produce
+
 ```json
 [
     {
@@ -30,9 +38,13 @@ Will produce:
 ]
 ```
 
-Use already known device:
+### Use a known device
+
+After discovering you can create a device:
+
+
 ```php
-\TPG\Broadlink\Device\RMDevice::authenticate('192.168.88.15','34:ea:cc:cc:cc:bc')->getTemperature()
+    \TPG\Broadlink\Device\AuthenticatedDevice::authenticate('192.168.88.15','34:ea:cc:cc:cc:bc')
 ```
 
 ### Draft implementation of Broadlink Catalog Cloud
