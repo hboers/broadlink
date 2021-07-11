@@ -48,7 +48,7 @@ class DiscoverCommand implements RawCommandInterface
     
     private function buildIP($deviceId) : string 
     {
-        switch($deviceId) 
+        switch($deviceId) {
             case 0x279d:
                 return implode('.',$packetBuilder->readBytes(0x36,4));
             default:
