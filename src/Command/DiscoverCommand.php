@@ -46,7 +46,7 @@ class DiscoverCommand implements RawCommandInterface
         return $packetBuilder->getPacket();
     }
     
-    private function buildIP($deviceId) : string 
+    private function buildIP($deviceId,$packetBuilder) : string 
     {
         switch($deviceId) {
             case 0x279d:
@@ -60,7 +60,7 @@ class DiscoverCommand implements RawCommandInterface
     {
         $packetBuilder = new PacketBuilder($packet);
         $deviceId = $packetBuilder->readInt16(0x34);
-        $ip = $this->buildIP($deviceId);
+        $ip = $this->buildIP($deviceId,$packetBuilder);
         $mac = vsprintf('%02x:%02x:%02x:%02x:%02x:%02x',$packetBuilder->readBytes(0x3a,6));
         $name =  trim(implode(array_map('\chr',array_reverse($packetBuilder->readBytes(0x40,60)))));
         return new DiscoveredDevice(new Device($ip,$mac),$deviceId,$name);
