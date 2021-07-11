@@ -1,10 +1,10 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
-use TPG\Broadlink\Broadlink;
-use TPG\Broadlink\Cipher\CipherInterface;
+use HBO\Broadlink\Broadlink;
+use HBO\Broadlink\Cipher\CipherInterface;
 
 class DiscoveredDevice implements DeviceInterface, \JsonSerializable
 {

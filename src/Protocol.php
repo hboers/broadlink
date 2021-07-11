@@ -1,14 +1,14 @@
 <?php
 
-namespace TPG\Broadlink;
+namespace HBO\Broadlink;
 
 
-use TPG\Broadlink\Command\CommandInterface;
-use TPG\Broadlink\Command\EncryptedCommandInterface;
-use TPG\Broadlink\Command\RawCommandInterface;
-use TPG\Broadlink\Device\AuthenticatedDevice;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Command\CommandInterface;
+use HBO\Broadlink\Command\EncryptedCommandInterface;
+use HBO\Broadlink\Command\RawCommandInterface;
+use HBO\Broadlink\Device\AuthenticatedDevice;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
 
 class Protocol
 {

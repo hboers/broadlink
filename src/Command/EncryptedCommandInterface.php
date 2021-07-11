@@ -1,8 +1,8 @@
 <?php
-namespace TPG\Broadlink\Command;
+namespace HBO\Broadlink\Command;
 
 
-use TPG\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\Packet;
 
 interface EncryptedCommandInterface extends CommandInterface
 {

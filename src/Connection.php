@@ -1,10 +1,10 @@
 <?php
 
-namespace TPG\Broadlink;
+namespace HBO\Broadlink;
 
 
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Packet\Packet;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Packet\Packet;
 
 class Connection
 {

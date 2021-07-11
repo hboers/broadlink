@@ -1,11 +1,11 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
-use TPG\Broadlink\Broadlink;
-use TPG\Broadlink\Cipher\Cipher;
-use TPG\Broadlink\Cipher\CipherInterface;
+use HBO\Broadlink\Broadlink;
+use HBO\Broadlink\Cipher\Cipher;
+use HBO\Broadlink\Cipher\CipherInterface;
 
 class AuthenticatedDevice implements DeviceInterface
 {

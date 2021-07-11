@@ -1,14 +1,14 @@
 <?php
 
-namespace TPG\Broadlink\Command;
+namespace HBO\Broadlink\Command;
 
-use TPG\Broadlink\Device\BroadcastDevice;
-use TPG\Broadlink\Device\Device;
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Device\DiscoveredDevice;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Utils;
+use HBO\Broadlink\Device\BroadcastDevice;
+use HBO\Broadlink\Device\Device;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Device\DiscoveredDevice;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Utils;
 
 class DiscoverCommand implements RawCommandInterface
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace TPG\Broadlink;
+namespace HBO\Broadlink;
 
 
-use TPG\Broadlink\Command\AuthenticateCommand;
-use TPG\Broadlink\Command\CommandInterface;
-use TPG\Broadlink\Command\DiscoverCommand;
-use TPG\Broadlink\Device\AuthenticatedDevice;
-use TPG\Broadlink\Device\Device;
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Device\DiscoveredDevice;
+use HBO\Broadlink\Command\AuthenticateCommand;
+use HBO\Broadlink\Command\CommandInterface;
+use HBO\Broadlink\Command\DiscoverCommand;
+use HBO\Broadlink\Device\AuthenticatedDevice;
+use HBO\Broadlink\Device\Device;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Device\DiscoveredDevice;
 
 class Broadlink
 {

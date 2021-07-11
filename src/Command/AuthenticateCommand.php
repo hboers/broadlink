@@ -1,12 +1,12 @@
 <?php
 
-namespace TPG\Broadlink\Command;
+namespace HBO\Broadlink\Command;
 
 
-use TPG\Broadlink\Device\AuthenticatedDevice;
-use TPG\Broadlink\Device\DeviceInterface;
-use TPG\Broadlink\Packet\Packet;
-use TPG\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Device\AuthenticatedDevice;
+use HBO\Broadlink\Device\DeviceInterface;
+use HBO\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\PacketBuilder;
 
 class AuthenticateCommand implements EncryptedCommandInterface
 {

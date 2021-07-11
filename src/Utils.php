@@ -1,9 +1,9 @@
 <?php
 
-namespace TPG\Broadlink;
+namespace HBO\Broadlink;
 
 
-use TPG\Broadlink\Packet\Packet;
+use HBO\Broadlink\Packet\Packet;
 
 class Utils
 {

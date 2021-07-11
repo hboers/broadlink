@@ -1,9 +1,9 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
-use TPG\Broadlink\Cipher\CipherInterface;
+use HBO\Broadlink\Cipher\CipherInterface;
 
 interface DeviceInterface
 {

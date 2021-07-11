@@ -1,11 +1,11 @@
 <?php
 
-namespace TPG\Broadlink\Device;
+namespace HBO\Broadlink\Device;
 
 
-use TPG\Broadlink\Command\GetSensorsCommand;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Protocol;
+use HBO\Broadlink\Command\GetSensorsCommand;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Protocol;
 
 class RMDevice extends AuthenticatedDevice
 {

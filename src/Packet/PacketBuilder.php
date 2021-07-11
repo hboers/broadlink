@@ -1,6 +1,6 @@
 <?php
 
-namespace TPG\Broadlink\Packet;
+namespace HBO\Broadlink\Packet;
 
 
 class PacketBuilder

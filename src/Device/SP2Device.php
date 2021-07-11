@@ -1,11 +1,11 @@
-<?php namespace TPG\Broadlink\Device;
+<?php namespace HBO\Broadlink\Device;
 
-use TPG\Broadlink\Command\EncryptedCommandInterface;
-use TPG\Broadlink\Command\GetEnergyCommand;
-use TPG\Broadlink\Command\GetSensorsCommand;
-use TPG\Broadlink\Command\SetSensorsCommand;
-use TPG\Broadlink\Packet\PacketBuilder;
-use TPG\Broadlink\Protocol;
+use HBO\Broadlink\Command\EncryptedCommandInterface;
+use HBO\Broadlink\Command\GetEnergyCommand;
+use HBO\Broadlink\Command\GetSensorsCommand;
+use HBO\Broadlink\Command\SetSensorsCommand;
+use HBO\Broadlink\Packet\PacketBuilder;
+use HBO\Broadlink\Protocol;
 
 class SP2Device extends AuthenticatedDevice
 {
